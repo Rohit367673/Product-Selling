@@ -1,0 +1,392 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+*::selection {
+  color: white;
+  background-color: black;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 50px;
+}
+.nav img {
+  width: 100px;
+}
+.nav a {
+  text-decoration: none;
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+.hov:hover {
+  font-weight: bolder;
+}
+.nav .right {
+  gap: 20px;
+  display: flex;
+}
+.branding {
+  padding: 9vw 17.2vw;
+}
+.branding h1 {
+  font-weight: 700;
+  font-size: 2vw;
+  color: rgb(249 115 22);
+}
+.heading {
+  display: flex;
+  gap: 40px;
+}
+.branding .heading h1 {
+  font-size: 5vw;
+  /* making text tranpartent and adding border */
+  color: transparent;
+  -webkit-text-stroke: 1.2px black;
+  font-size: 5vw;
+  font-weight: 900;
+}
+.branding .heading h1:hover {
+  color: black;
+}
+.nav img {
+  width: 100px;
+  margin-right: -20rem;
+}
+.btnval button {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: black;
+  cursor: pointer;
+  padding: 0.75rem 2.5rem;
+  border-radius: 32px;
+  box-shadow: 1px 1px 4px;
+  position: relative;
+  overflow: hidden;
+  transition: all ease 0.4s;
+  background-color: white;
+}
+
+.btnval button::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(249 115 22);
+  left: 0;
+  bottom: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  transition: all ease 0.4s;
+}
+.btnval button:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+.btnval button a {
+  z-index: 9;
+  position: relative;
+  font-weight: 600;
+}
+.btnval button:hover a {
+  color: black;
+}
+
+.aboutw p {
+  font-size: 1.5vw;
+  font-weight: 800;
+  letter-spacing: -0.08vw;
+  padding: 5vw 15vw;
+  justify-content: flex-end;
+}
+
+.imageani {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+
+  margin-top: 5vw;
+}
+.aleft {
+  width: 40%;
+  height: 97%;
+
+  margin-left: 60px;
+  overflow-y: auto;
+}
+.aleft::-webkit-scrollbar {
+  display: none;
+}
+
+.aright {
+  display: flex;
+  align-items: center;
+
+  width: 40%;
+  height: inherit;
+
+  margin-right: 46px;
+  justify-content: flex-end;
+  overflow: auto;
+}
+.aright::-webkit-scrollbar {
+  display: none;
+}
+.aright .rimage {
+  width: 90%;
+  height: 90%;
+ animation: move 8s  infinite linear ;
+}
+.rimage img {
+  width: 112%;
+  height: 103%;
+  margin-left: -43px;
+  margin-top: -15px;
+}
+.felem {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0vw 10vw;
+  margin: 1.5vw 0;
+  animation: move 8s infinite linear;
+}
+@keyframes move {
+  from {
+    transform: translatey(0);
+  }
+  to {
+    transform: translateY(-298%);
+  }
+}
+.felem h1 {
+  font-weight: 400;
+  line-height: 1;
+  font-size: 2.3vw;
+  text-transform: capitalize;
+  margin: 2vw 0;
+}
+.felem h3 {
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+.felem h4 {
+  opacity: 0.5;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.abtn {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: black;
+  cursor: pointer;
+  padding: 0.75rem 2.5rem;
+  border-radius: 32px;
+  box-shadow: 2px 4px 5px;
+}
+.res {
+  width: 100%;
+  padding: 3vw 16vw;
+}
+.res h1 {
+  font-size: 3vw;
+  font-weight: 400;
+  width: 60%;
+}
+.res p {
+  font-size: 1.5vw;
+  margin-top: 3vw;
+  width: 60%;
+}
+.slides {
+  padding: 3vw 10vw;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5vw;
+}
+.slide {
+  width: 24vw;
+}
+.slide .img {
+  width: 86%;
+  height: 270px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slide .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 1px solid;
+  border-radius: 2rem;
+}
+.slide h3 {
+  font-size: 1.4vw;
+  font-weight: 400;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+.abou {
+  margin-left: 5.8rem;
+  margin-top: 3rem;
+}
+.btn {
+  margin-top: 5rem;
+}
+
+.productCard{
+  background-color: rgb(252, 252, 252);
+  width: 200px;
+  margin: 2rem;
+  border-radius: 5px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s;
+  border: 1px solid black;
+}
+.productCard img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.productCard h4{
+  
+  
+ font-weight: bold;
+}
+.productCard p{
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+
+
+
+/* cart css */
+
+.cart{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  background-color:gainsboro ;
+
+}
+.cart main{
+  padding: 2rem;
+  overflow-y: auto;
+
+}
+
+.cart h1{
+  color: white;
+  font-size: 6rem;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 14rem;
+}
+.cart aside{
+  border-radius: 50px 0 0 50px;
+  background-color:rgb(229 231 235);
+  color:black;
+  height: 100%;
+  width: 100%;
+  box-shadow: -4px 0px 8px rgb(229 231 235);
+  display: flex;
+   flex-direction: column ;
+   justify-content: center;
+}
+.cart h2{
+  font-size:   1.5rem;
+  letter-spacing: 2px;
+  margin-left: 4rem;
+}
+.cart::-webkit-scrollbar{
+  display: none;
+}
+.cart h2:last-of-type{
+  font-weight: 600;
+}
+.cartItem{
+  background: white;
+  width: 100%;
+  border-radius: 10px;
+  margin: 2rem 0;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+  align-items: center;
+  border-radius: 1rem;
+
+}
+.cartItem img{
+  object-fit: contain;
+  width: 100%;
+  height: 200px;
+}
+.cartItem div{
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+}
+.cartItem button{
+  height: 30px;
+  width: 30px;
+  border: none;
+  background: rgba(0, 0, 0, 0.711);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cartItem button:hover{
+  background-color: rgb(8, 0, 0);
+}
+.cartItem p{
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+}
+article h3{
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 3px 99px;
+
+}
+article p{
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 3px 79px;
+
+}
+
+.cartItem svg{
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: inline-block;
+  margin: auto;
+
+}
+.cartItem svg:hover{
+  color:rgb(249 115 22) ;
+}
+
+
